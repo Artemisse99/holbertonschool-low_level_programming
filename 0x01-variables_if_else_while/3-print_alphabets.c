@@ -2,19 +2,20 @@
 
 /**
  * main - print of the alfabet lowercase and uppercase
- * return: alwais 0
+ * Return: 0
  */
 
 int main(void)
 {
 
-	char c; char j;
+	char c;
+	char j;
 
-	for (c = 'a'; c = 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
 	}
-	for (j = 'A'; j = 'Z'; j++)
+	for (j = 'A'; j <= 'Z'; j++)
 	{
 		putchar(c);
 	}
