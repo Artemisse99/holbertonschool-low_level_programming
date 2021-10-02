@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - print of the alfabet lowercase
- * return: alwais 0
+ * main - print of the alphabet lowercase
+ * return: 0
  */
 
 int main(void)
