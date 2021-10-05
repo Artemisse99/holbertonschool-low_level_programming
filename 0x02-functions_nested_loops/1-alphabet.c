@@ -14,17 +14,5 @@ void print_alphabet(void)
 	{
 		_putchar(i);
 	}
-	putchar('\n');
-}
-
-/**
- * main - using print_alphabet function
- *
- * Return: Alwais (0)
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	_putchar('\n');
 }
