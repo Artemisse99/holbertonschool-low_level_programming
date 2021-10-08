@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - alphabet lowercase x10
+ * jack_bauer - alphabet lowercase x10 - up
  *
  */
 
