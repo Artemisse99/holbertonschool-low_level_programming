@@ -2,8 +2,8 @@
 
 /**
  *print_line  - alphabet lowercase
- *
- * Return: 0
+ *@n: parameter
+ *Return: 0
  */
 
 void print_line(int n)
