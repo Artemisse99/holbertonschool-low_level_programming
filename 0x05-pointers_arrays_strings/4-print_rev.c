@@ -16,6 +16,6 @@ void print_rev(char *s)
 	{
 		putchar(s[a]);
 	}
-	putchar('\n');
-
+	printf("\n");
+	printf("\n");
 }
