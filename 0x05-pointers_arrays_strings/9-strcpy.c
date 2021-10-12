@@ -3,6 +3,7 @@
  * _strcpy - using first time pointers- print string
  *@src: Pointers
  *@dest: Parameters pointers
+ *Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -13,5 +14,5 @@ char *_strcpy(char *dest, char *src)
 		dest[a] = src[a];
 	}
 	dest[a] = '\0';
-	return(dest);
+	return (dest);
 }
