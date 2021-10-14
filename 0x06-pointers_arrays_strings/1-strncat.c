@@ -19,7 +19,8 @@ char *_strncat(char *dest, char *src, int n)
 		concat++;
 		src++;
 	}
-	n > c ? n = c;
+	while (n > c )
+	   n = c;
 	while ((n > 0 ) && (*src != '\0'))
 	{
 		*concat = *src;
