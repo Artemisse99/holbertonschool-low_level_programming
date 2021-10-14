@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 
-	*concat= '\0';
+	*concat = '\0';
 
 	return (dest);
 
