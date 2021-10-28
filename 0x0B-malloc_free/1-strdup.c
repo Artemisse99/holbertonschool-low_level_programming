@@ -6,26 +6,35 @@
  * @str: Parameters
  * Return: pointer
  */
-
 char *_strdup(char *str)
 {
-	int i, end;
-	char *array;
+	int i = 0, other = 0;
+	char *p;
 
 	if (str == NULL)
-		return (NULL);
-
-	for (end = 0; end <= *str; end++)
 	{
+		return (NULL);
 	}
 
-	end += 1;
-	array = malloc(sizeof(char) * end);
+	while (other <= *str)
+	{
+		other++;
+	}
 
-	for (i = 0; i < end; i++)
-		array[i] = str[i];
+	p = malloc(sizeof(*p) * other + 1);
 
-	if (array == NULL)
+	if (p == NULL)
+	{
 		return (NULL);
-	return (array);
+	}
+	while (i < other)
+	{
+
+		p[i] = str[i];
+		i++;
+	}
+
+
+
+	return (p);
 }
