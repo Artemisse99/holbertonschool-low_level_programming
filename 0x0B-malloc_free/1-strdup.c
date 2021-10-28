@@ -27,10 +27,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (other < i)
+	while (i < other)
 	{
 
-		p[other] = str[other];
+		p[i] = str[other];
 		i++;
 	}
 
