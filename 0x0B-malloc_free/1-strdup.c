@@ -17,7 +17,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (other <= *str)
+	while (other < *str)
 	{
 		other++;
 	}
