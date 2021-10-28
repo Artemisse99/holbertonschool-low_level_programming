@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <limits.h>
 /**
- *str_concat - function that concatenates two strings
- * @s1: Parameters
- * @s2: Parameters
+ *malloc_checked - function that allocates memory using malloc
+ * @b: Parameters
  * Return: pointer
  */
 void *malloc_checked(unsigned int b)
@@ -12,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *s;
 
 	s = malloc(b);
-	if(s == NULL)
+	if (s == NULL)
 	{
 		exit(98);
 	}
