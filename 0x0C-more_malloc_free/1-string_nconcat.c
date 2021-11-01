@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * string_nconcat - string_nconcat
  * @s1: input one
