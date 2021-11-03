@@ -2,12 +2,8 @@
 #include "dog.h"
 
 /**
- * init_dog - function that initialize a variable of type struct dog
+ * free_dog - function that frees dogs
  * @d: pointer to dog struct
- * @name: char type
- * @age: float type
- * @owner: char type
- * Return: return pointer to struct
  */
 void free_dog(dog_t *d)
 {
