@@ -3,12 +3,11 @@
 #include <stdlib.h>
 
 /**
- * init_dog - function that initialize a variable of type struct dog
- * @d: pointer to dog struct
+ * new_dog - function that initialize a variable of type struct dog
  * @name: char type
  * @age: float type
  * @owner: char type
- * Return: return pointer to struct
+ * Return: newDog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
