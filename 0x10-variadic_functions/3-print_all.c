@@ -1,43 +1,52 @@
-#include <stdio.h>
 #include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
+
+
 /**
- * print_all - function to print all inputs
- * @format: const pointer to functionof type char
- * Return: always successful
+ * print_all - prints anything
+ * @format: list of types of arguments passed to the function
  */
+
 void print_all(const char * const format, ...)
 {
-	int i, j;
-	va_list arg;
-	char *seperator;
+	int i = 0;
+	char *str, *sp = "";
 
-	pt types[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_float},
-		{"s", print_string},
-		{NULL, NULL}
-	};
+	va_list ap;
 
-	va_start(arg, format);
+	va_start(ap, format);
 
-	i = 0;
-	seperator = "";
-	while (format && format[i])
+	if (format)
 	{
-		j = 0;
-		while (types[j].test != NULL)
+		while (format[i])
 		{
-			if (format[i] == types[j].test[0])
+			switch (format[i])
 			{
-				printf("%s", seperator);
-				types[j].printer(arg);
-				seperator = ", ";
+			case 'c':
+				printf("%s%c", sp, va_arg(ap, int));
+				break;
+			case 'i':
+				printf("%s%d", sp, va_arg(ap, int));
+				break;
+			case 'f':
+				printf("%s%f", sp, va_arg(ap, double));
+				break;
+			case 's':
+				str = va_arg(ap, char *);
+				if (!str)
+					str = "(nil)";
+				printf("%s%s", sp, str);
+				break;
+			default:
+				i++;
+				continue;
 			}
-			j++;
+			sp = ", ";
+			i++;
 		}
-		i++;
 	}
+
 	printf("\n");
-	va_end(arg);
+	va_end(ap);
 }
