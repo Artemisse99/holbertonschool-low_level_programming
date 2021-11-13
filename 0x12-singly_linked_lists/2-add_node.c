@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
  *add_node - length lists
- *@h: parameter
+ *@head: parameter
+ *@str: parameter
  *Return: count
  *
  */
@@ -17,7 +18,9 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	for (i = 0; str[i] != '\0'; i++);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	}
 
 	new_node->str = strdup(str);
 
