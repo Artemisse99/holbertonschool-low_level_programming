@@ -1,16 +1,16 @@
 #include "lists.h"
 /**
- *add_node_end - add node at end
- *@head: parameter
- *@str: parameter
- *
+ * add_node_end - add node at end
+ * @head: parameter
+ * @str: parameter
+ * Return: end_node
  *
  */
-list_t add_node_end(list_t *head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *end_node;
-	list_t list_new = head;
-	int i;
+	list_t *list_new = *head;
+	int i, x;
 
 	end_node = malloc(sizeof(list_t));
 
@@ -33,7 +33,7 @@ list_t add_node_end(list_t *head, const char *str)
 		return (end_node);
 	}
 
-	while (list_new->next != NULL)
+	for (x = 0; list_new->next != NULL; x++)
 	{
 		list_new = list_new->next;
 	}
