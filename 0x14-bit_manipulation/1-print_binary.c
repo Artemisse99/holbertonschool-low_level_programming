@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
+#include <main.h>
 
 /**
  * print_binary - prints the binary representation of a number.
@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 	size = sizeof(n) * 8;
 	if (n == 0)
-		_putchar('0');
+		putchar('0');
 	else
 	{
 		for (size = size - 1; size >= 0; size--)
@@ -23,10 +23,10 @@ void print_binary(unsigned long int n)
 			if (res & 1)
 			{
 				dif = 1;
-				_putchar('1');
+				putchar('1');
 			}
 			else if (dif == 1)
-				_putchar('0');
+				putchar('0');
 		}
 	}
 }
