@@ -9,7 +9,7 @@
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *nuevo_nodo = NULL;
+	dlistint_t *new_node = NULL;
 	dlistint_t *tmp = *head;
 
 	if (!head)
