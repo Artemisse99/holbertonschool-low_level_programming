@@ -1,5 +1,13 @@
 #include "lists.h"
+/**
+ * freeNode - free node
+ * @v_free: parameter at free
+ */
 
+void freeNode(dlistint_t *v_free)
+{
+	free(v_free);
+}
 /**
  * delete_dnodeint_at_index - delete node whit index
  * @head: parameter node
