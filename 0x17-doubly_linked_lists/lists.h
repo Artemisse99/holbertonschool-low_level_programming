@@ -32,7 +32,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
 dlistint_t *Next(const dlistint_t *L);
-dlistint_t *previous(const dlistint_t *loc);
+dlistint_t *before(const dlistint_t *L);
 const dlistint_t *thereAre(const dlistint_t *L);
 void insertBefore(dlistint_t *v_insert, dlistint_t *site);
 void insertAfter(dlistint_t *v_insert, dlistint_t *site);
