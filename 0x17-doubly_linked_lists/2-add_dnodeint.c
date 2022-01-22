@@ -18,7 +18,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (!new_node)
 		return (NULL);
 	if (thereAre(*head))
-		insertAfter(new_node, *head);
+		insertBefore(new_node, *head);
 	*head = new_node;
 	return (new_node);
 }
