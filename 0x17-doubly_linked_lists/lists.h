@@ -33,7 +33,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
 dlistint_t *Next(const dlistint_t *L);
 dlistint_t *previous(const dlistint_t *loc);
-const dlistint_t *whereAre(const dlistint_t *L);
+const dlistint_t *thereAre(const dlistint_t *L);
 void insertBefore(dlistint_t *v_insert, dlistint_t *site);
 void insertAfter(dlistint_t *v_insert, dlistint_t *site);
 void printNode(const dlistint_t *L);
