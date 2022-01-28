@@ -1,4 +1,4 @@
-clude "hash_tables.h"
+#include "hash_tables.h"
 
 /**
  * shash_table_create - implementation of the djb2 algorithm
