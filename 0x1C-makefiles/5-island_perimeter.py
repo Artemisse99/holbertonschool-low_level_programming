@@ -3,7 +3,7 @@
 
 
 def island_perimeter(grid):
-    """returns permimetro"""
+    """returns perimetro"""
     perimetro = 0
     for fila in range(0, len(grid)):
         for col in range(0, len(grid[fila])):
